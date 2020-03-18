@@ -1,0 +1,84 @@
+Request : http://localhost:8080/v1/orderHistory/consumer/20200
+
+Response : 
+{
+    "resultInfo": {
+        "code": "SUCCESS",
+        "message": "Request Successfully fulfilled.",
+        "codeId": "23000000"
+    },
+    "data": {
+        "orders": [
+            {
+                "orderId": 102002,
+                "merchantId": 4000,
+                "consumerId": 20200,
+                "storeId": 3000,
+                "totalPrice": 899,
+                "currency": "Rs",
+                "status": "NEW",
+                "orderItems": [
+                    {
+                        "orderItemId": 83838,
+                        "itemId": 7373,
+                        "name": "bread",
+                        "price": 38,
+                        "quantity": 3,
+                        "imageUrl": {
+                            "url": "http://testvicky.com/imgaes/234423444",
+                            "type": "default"
+                        },
+                        "itemOptions": {
+                            "totalPrice": 50,
+                            "optionGroup": [
+                                {
+                                    "name": "option group 1",
+                                    "groupId": 23456456,
+                                    "options": [
+                                        {
+                                            "name": "group1 - option 2",
+                                            "price": 50,
+                                            "optionId": 34244456,
+                                            "optionStoreMapId": 435554778
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "orderItemId": 3737,
+                        "itemId": 7447,
+                        "name": "something",
+                        "price": 488,
+                        "quantity": 2,
+                        "imageUrl": {
+                            "url": "http://testvicky.com/imgaes/234423444",
+                            "type": "default"
+                        },
+                        "itemOptions": {
+                            "totalPrice": 50,
+                            "optionGroup": [
+                                {
+                                    "name": "option group 1",
+                                    "groupId": 23456456,
+                                    "options": [
+                                        {
+                                            "name": "group1 - option 2",
+                                            "price": 50,
+                                            "optionId": 34244456,
+                                            "optionStoreMapId": 435554778
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "stores": [
+            3000
+        ]
+    }
+}
