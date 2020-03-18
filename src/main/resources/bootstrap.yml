@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: oa-order-management
+
+ribbon:
+  ConnectTimeout: 20000
+  ReadTimeout: 20000

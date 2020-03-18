@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+    <property name="SERVICE">oa-order-management</property>
+    <Property name="CONSOLE_LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [${env:SERVICE},%X{X-B3-TraceId},%X{X-B3-SpanId}] [%X{instanceId}] [%X{logMDCFilter.UUID}] [%t] %-5level %-40.40logger{39}:%L - %m%n</Property>
+    <Property name="JSON_LOG_PATTERN">{"time": "%d{ISO8601}", "level": "%-5level", "service": "${env:SERVICE}", "class": "%-40.40logger{39}:%L", "environment": "${sys:spring.profiles.active:-defaultEnv}", "instanceId" : "%X{instanceId}", "requestId" : "%X{logMDCFilter.UUID}", "message": "%enc{%maxLen{%m}{204800}}{JSON}", "traceId": "%X{X-B3-TraceId}", "spanId": "%X{X-B3-SpanId}", "exception": "%enc{%maxLen{%ex}{204800}}{JSON}"}%n</Property>
+</properties>
